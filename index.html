@@ -1,158 +1,100 @@
-      <!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Selamat Tahun Baru 🤍</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #f8fafc;
-      overflow: hidden;
-    }
-
-    .container {
-      text-align: center;
-      padding: 24px;
-      max-width: 520px;
-      animation: fadeIn 1.5s ease;
-    }
-
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 18px;
-      text-shadow: 0 0 12px rgba(255,255,255,0.4);
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      opacity: 0;
-      animation: showText 2s ease forwards;
-      animation-delay: 0.5s;
-      white-space: pre-line;
-    }
-
-    button {
-      margin-top: 28px;
-      padding: 12px 30px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #facc15, #fb7185);
-      color: #020617;
-      cursor: pointer;
-      box-shadow: 0 0 18px rgba(250,204,21,0.6);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 26px rgba(250,204,21,0.9);
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .spark {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: white;
-      border-radius: 50%;
-      animation: sparkle 2s infinite;
-      opacity: 0.8;
-    }
-
-    @keyframes sparkle {
-      0% { transform: translateY(0); opacity: 0; }
-      50% { opacity: 1; }
-      100% { transform: translateY(-140px); opacity: 0; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.96); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes showText {
-      to { opacity: 1; }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="description" content="@feelthisray - Script HTML by Feeldream Repl Co">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>💌 S.id/forpacarku — Happy New Yeaarr 🌺</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sriracha&family=Itim&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link rel="stylesheet" href="https://htmlku.com/forpacarku/style.css">
 </head>
-
 <body>
-
-  <div class="container" id="opening">
-    <h1>✨ Sentuh untuk Mulai ✨</h1>
-    <button onclick="openLetter()">Buka Surat 🤍</button>
+	<div class="overlay">
+		<div class="cover">
+	    <p>Sentuh untuk Mulai</p>
+	   <div class="awalan">
+	     <svg class='line' fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.000000, 2.000000)'><path d='M9.27542857,0.714285714 C14.0030476,0.714285714 17.836381,4.54666667 17.836381,9.2752381 C17.836381,14.0038095 14.0030476,17.8361905 9.27542857,17.8361905 C4.54685714,17.8361905 0.71447619,14.0038095 0.71447619,9.2752381 C0.71447619,4.54666667 4.54685714,0.714285714 9.27542857,0.714285714 Z'></path><path d='M17.8989524,16.487619 C18.678,16.487619 19.3094286,17.12 19.3094286,17.8980952 C19.3094286,18.6780952 18.678,19.3095238 17.8989524,19.3095238 C17.1199048,19.3095238 16.4875238,18.6780952 16.4875238,17.8980952 C16.4875238,17.12 17.1199048,16.487619 17.8989524,16.487619 Z'></path></g></svg>
+	     <label style="font-size:16px">Pesan Untukmu 🫶</label>
+	   </div>
+	</div>
   </div>
-
-  <div class="container hidden" id="letter">
-    <h1>Selamat Tahun Baru 🥳💐</h1>
-    <p>
-Halooo adeeek,
-Selamat Tahun Baruuuu 🥳💐
-
-Makasiii yaaa udahh nemeninn akuuu hampir setahunn inii,
-sampe sejauh inii,
-bahkann di saat semuanyaaa nggak selaluu mudaahh.
-
-Tahunn kemareenn ngajarin aku banyak hall—
-tentang sabarr,
-tentang ngertiinn,
-dan tentang gimanaa rasanyaaa pedulii sama seseoranggg dengan tulusss…
-yaituuu dirimuu, deekk 😁
-
-Adek jugaa belajarr banyak hall jugaa, kannn?
-xixixi 😄
-
-Dii tahunn yang baruu inii,
-akuu cumaa berharapp adekk bisaa lebih tenangg,
-lebih ringann jalannyaaa,
-dan lebih ramahh samaa diri sendiriii.
-
-Semogaa hal-hal baikk pelan-pelann nyamperinn adekk, yaaa 🤍
-
-SELAMATTT TAHUUNN BARUUUU, DEEKK 🥳🎉♥️
-    </p>
+  
+	<div id="bodyblur">
+	   <img src="https://feeldreams.github.io/wp11.jpg" id="wallpaper"/>
+	   <div id="thisblur"></div>
+	</div>
+	
+	<audio src="https://feeldreams.github.io/audio/thousand.mp3" id="linkmp3"></audio>
+	
+    <div id="envwrap" class="envlope-wrapper">
+        <div id="envelope" class="close">
+            <div class="wax-seal"></div>
+            <div class="front flap"><span id="frontEnv">🩷</span></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="letter-corner corner-tl"></div>
+                <div class="letter-corner corner-br"></div>
+                <div class="message">
+                    <p>Alooo Kamu!<br><span style='font-size:23px'>ᯓᡣ𐭩</span></p>
+                    <p>......</p>
+                </div>
+            </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+            <div class="sparkles">
+                <div class="sparkle s1"></div>
+                <div class="sparkle s2"></div>
+                <div class="sparkle s3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="reset">
+        <button id="open">Buka Surat</button>
+    </div>
+    
+  <div class="stiker">
+    <img id="main-stiker" src="https://htmlku.com/0/panda/hearthappy.gif" />
+    <img id="stikerAlt1" src="https://htmlku.com/0/panda/ciumpipi.gif" />
   </div>
+  
+  <div class="container" id="container">
+    <div class="conMsg">
+    <p class="titleC"><b>alooo adeeeekk 🌺🥳💐</b></p>
+    <script>
+    teksAnimasi = [
+                    "<b>ᯓᡣ𐭩</b><br><b>Happy New Yeaarr 2026🎉</b>",
+                    "<br>Selamat Tahun Baruuuu 🥳💐<br>Makasiii yaaa udahh nemeninn akuuu hampir setahunn inii,<br>sampe sejauh inii🥰<br><br>Walaupun ga mudah, tahunn kemareenn ngajarin aku banyak hall—tentang sabarr, tentang ngertiinn, dan tentang gimanaa rasanyaaa pedulii sama seseoranggg dengan tulusss…<br><br>Adek jugaa belajarr banyak hall jugaa, kannn?<br><br>Dii tahunn yang baruu inii,<br>akuu cumaa berharapp adekk bisaa lebih tenangg,<br>lebih ringann jalannyaaa,<br>dan lebih ramahh samaa diri adeekk sendiriii, yaaa?<br>Semogaa hal-hal baikk pelan-pelann nyamperinn adekk, yaaa 🤍<br><br>SELAMATTT TAHUUNN BARUUUU, DEEKK 🥳🎉♥️",
+    ];
+	</script>
+    <p class="messageC"></p>
+    </div>
+  </div>
+  
+    <div>
+        <div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    function openLetter() {
-      document.getElementById("opening").classList.add("hidden");
-      document.getElementById("letter").classList.remove("hidden");
-      createSparks();
-    }
-
-    function createSparks() {
-      for (let i = 0; i < 24; i++) {
-        const spark = document.createElement("div");
-        spark.className = "spark";
-        spark.style.left = Math.random() * window.innerWidth + "px";
-        spark.style.bottom = "0px";
-        spark.style.animationDuration = (1.5 + Math.random()) + "s";
-        document.body.appendChild(spark);
-
-        setTimeout(() => {
-          spark.remove();
-        }, 2000);
-      }
-    }
-  </script>
+<script src="https://htmlku.com/forpacarku/script.js"></script>
 
 </body>
-</html>
+                                          </html>
